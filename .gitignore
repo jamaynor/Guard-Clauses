@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/src/JAMaynor.GuardClauses/.vs
+/src/JAMaynor.GuardClauses/bin/Debug
+/src/JAMaynor.GuardClauses/obj
+/test/JAMaynor.GuardClauses.Tests/bin/Debug/net6.0
+/test/JAMaynor.GuardClauses.Tests/obj

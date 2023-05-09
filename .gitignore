@@ -4,7 +4,7 @@
 
 /.vs
 /src/JAMaynor.GuardClauses/.vs
-/src/JAMaynor.GuardClauses/bin/Debug
+/src/JAMaynor.GuardClauses/bin
 /src/JAMaynor.GuardClauses/obj
-/test/JAMaynor.GuardClauses.Tests/bin/Debug/net6.0
+/test/JAMaynor.GuardClauses.Tests/bin
 /test/JAMaynor.GuardClauses.Tests/obj

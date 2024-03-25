@@ -1,6 +1,7 @@
+using DevJoy.GuardClauses;
+
 using System.Diagnostics;
 
-namespace JAMaynor.GuardClauses.Tests;
 
 public class GuardClauseTests
 {
@@ -16,8 +17,8 @@ public class GuardClauseTests
 
         try
         {
-            sw.Start();                
-            Guard.Against.Null(o);
+            sw.Start();
+            Guard.Against.Null(o);            
         }
         catch (ArgumentNullException ex)
         {
@@ -40,5 +41,21 @@ public class GuardClauseTests
             Assert.True(messageMilliseconds < 50);
         }
 
+    }
+
+    [Fact]
+    public void Throw_automatically_captures_parameterName()
+    {
+        object someObjectName = null;
+
+        try
+        {
+            Guard.Against.Null(someObjectName);
+            Guard.Against.Null(someObjectName, "This is a special message I want included in the Argumentexception that is thrown.");
+        }
+        catch (Exception ex)
+        {
+            Assert.True(ex.Message.Contains("someObjectName"));
+        }
     }
 }

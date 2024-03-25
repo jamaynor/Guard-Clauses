@@ -1,6 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 
-namespace JAMaynor;
+namespace DevJoy.GuardClauses;
 
 public static class GuardAgainstNotFound
 {
@@ -9,7 +9,7 @@ public static class GuardAgainstNotFound
     {
         if (enumerable.Contains(input))
         {
-            throw new  ArgumentException(message ?? $"The {parameterName} was not found.");
+            throw new ArgumentException(message ?? $"The {parameterName} was not found.");
         }
         return input;
     }

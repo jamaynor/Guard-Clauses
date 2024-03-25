@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 
-namespace JAMaynor;
+namespace DevJoy.GuardClauses;
 
 
 public static class GuardAgainstNull
